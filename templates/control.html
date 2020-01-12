@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/control.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+<div class="main_center">
+    <div class="bookstand_wrapper" id="bookstand_wrapper">
+        {% for bookstand in range(6) %}
+            <div class="bookstand" id="bookstand{{bookstand+1}}"><h2> {{ bookstand+1 }} </h2></div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="arrow" id="left"><</div>
+<div class="arrow" id="right">></div>
+
+<form action="/upload" method="post">
+<input type="hidden" name="bookstands" value="">
+<input type="submit" value="UPDATE">
+</form>
+
+<script src="{{ url_for('static', filename='js/control.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,114 @@
+.bookstand_wrapper {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bookstand {
+    background-color: #111111;
+    width: 100%;
+    height: 100px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.bookstand h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.active {
+    box-shadow: 0px 0px 0px 5px gold;
+}
+
+.arrow {
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+
+#left {
+    bottom: 50px;
+    left: 250px;
+}
+
+#right {
+    bottom: 50px;
+    right: 250px;
+}
+
+input[type="submit"] {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 7px 12px;
+    outline: none;
+    border: 10px solid #111;
+    cursor: pointer;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid #111;
+    transition: box-shadow .2s;
+    position: absolute;
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a h5 {
+    font-family: "Ostrich";
+    font-weight: normal;
+    font-size: 36px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    z-index: 0;
+    transform: translate(-100%);
+    transition: transform .2s;
+    border-bottom: 1px solid #111;
+}
+
+a:hover span {
+    transform: translate(0%);
+}

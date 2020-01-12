@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Ostrich";
+    src: url("../fonts/OstrichSans-Bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Ostrich";
+    src: url("../fonts/OstrichSans-Medium.otf");
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #111111;
+}
